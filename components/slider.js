@@ -14,7 +14,8 @@ export default class CusSlider extends React.Component {
   }
 
   render() {
-      global.radius = this.state.value*1000;
+    global.radius = 4000;
+    
     return (
       <View style={styles.container}>
         <Slider 

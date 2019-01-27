@@ -16,6 +16,7 @@ import {
 
 
   render() {
+    //global.radius = 1000;
     return (
       <View style={styles.container}>
           <View style={styles.sliders}>

@@ -56,8 +56,8 @@ class Venues extends Component {
         <MapView.Marker
         style={{width:10}} 
         coordinate={venue.coordinates}
-        title={"Farid is here"}
-        description={"cunt"}
+        title={venue.Event_name}
+        description={venue.Event_Description}
         //image ={require(custom_marker1)}
        >
        <Image

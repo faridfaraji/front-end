@@ -4,7 +4,7 @@ import UserLocation from './userloc.js'
 import Setting from './settings.js'
 import Notifications from './notifications.js'
 import Venues from './venues.js'
-
+import popup from './popup.js'
 
 const NavStack = createDrawerNavigator(
 
@@ -23,6 +23,9 @@ Venues:{
 },
 Notification:{
   screen: Notifications,
+},
+Popout: {
+  screen: popup
 },
 });
 

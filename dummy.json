@@ -1,10 +1,11 @@
 [{  
     "Event ID": 1000,
-    "Event name": "Party 1",
+    "Event_name": "Party 1",
     "rating": 4,
     "num_rating": 443,
     "head_count": 25,
     "Average Live Rating": 4,
+    "Event_Description": "Irnian Bitches",
     "Venue": { 
         "Venue ID": 2400,
         "venue_rating": 3,
@@ -17,11 +18,12 @@
   },
   {
     "Event ID": 1000,
-    "Event name": "Party 1",
+    "Event_name": "Party 1",
     "rating": 4,
     "num_rating": 443,
     "head_count": 25,
     "Average Live Rating": 4,
+    "Event_Description": "Shikhars Bitches",
     "Venue": { 
         "Venue ID": 2400,
         "venue_rating": 3,
