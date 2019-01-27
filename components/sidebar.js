@@ -3,6 +3,7 @@ import {createStackNavigator, createAppContainer, createDrawerNavigator} from 'r
 import UserLocation from './userloc.js'
 import Setting from './settings.js'
 import Notifications from './notifications.js'
+import Venues from './venues.js'
 
 
 const NavStack = createDrawerNavigator(
@@ -17,12 +18,12 @@ const NavStack = createDrawerNavigator(
    
 },
 Venues:{ 
-  screen: Setting,
+  screen: Venues,
  
 },
-/*Notification:{
+Notification:{
   screen: Notifications,
-},*/
+},
 });
 
 

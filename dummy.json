@@ -1,0 +1,34 @@
+[{  
+    "Event ID": 1000,
+    "Event name": "Party 1",
+    "rating": 4,
+    "num_rating": 443,
+    "head_count": 25,
+    "Average Live Rating": 4,
+    "Venue": { 
+        "Venue ID": 2400,
+        "venue_rating": 3,
+        "Address": "2205 Lower Mall"
+    },
+    "coordinates": {
+      "latitude": 49.2406,
+      "longitude": -123.2460 
+    }
+  },
+  {
+    "Event ID": 1000,
+    "Event name": "Party 1",
+    "rating": 4,
+    "num_rating": 443,
+    "head_count": 25,
+    "Average Live Rating": 4,
+    "Venue": { 
+        "Venue ID": 2400,
+        "venue_rating": 3,
+        "Address": "2205 Lower Mall"
+    },
+    "coordinates": {
+      "latitude": 49.2726,
+      "longitude": -123.1485
+    } 
+  }]

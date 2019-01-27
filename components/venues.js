@@ -2,17 +2,39 @@ import React, { Component } from 'react';
 import { Platform, Text, View, StyleSheet,Image, ImageBackground } from 'react-native';
 import { Constants, Location, Permissions,TaskManager} from 'expo';
 import { MapView } from 'expo';
-
+import dummyData from '../dummy.json'
 
 class Venues extends Component {
     constructor(props) {
         super(props);
-     this.state = { location: {coords: { latitude: 49.292, longitude: -123.116226}},
+     this.state = { 
+      location: {coords: { latitude: 49.292, longitude: -123.116226}},
+     Venues: [{
+      title: 'hello',
+      coordinates: {
+        latitude: 49.2606,
+        longitude: -123.2460 
+      },
+    },
+    {
+      title: 'hello',
+      coordinates: {
+        latitude: 49.2726,
+        longitude: -123.1485
+      },  
+    }],
      locationResult: "babe",
     
     };}
  
+    componentDidMount = async() =>{
+      this.setState({
+        Venues : dummyData
+      });
 
+    }
+
+ 
 
 
 
@@ -30,9 +52,10 @@ class Venues extends Component {
             longitudeDelta: 0.0421,
           }}
         >
+        {this.state.Venues.map(venue => (
         <MapView.Marker
         style={{width:10}} 
-        coordinate={this.state.location.coords}
+        coordinate={venue.coordinates}
         title={"Farid is here"}
         description={"cunt"}
         //image ={require(custom_marker1)}
@@ -42,10 +65,10 @@ class Venues extends Component {
        style={{width:35, height:35}}
        ></Image>
 
-      </MapView.Marker>
+      </MapView.Marker>))}
       <Text style ={styles.paragraph}>
+      Location: {JSON.stringify(this.state.Venues)}
       
-          Location: {JSON.stringify(this.state.location.coords)}
         </Text>
       
       </MapView>
